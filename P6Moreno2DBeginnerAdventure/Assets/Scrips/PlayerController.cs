@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public InputAction LeftAction;
@@ -9,19 +9,24 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-    
+        MoveAction.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Vector2 Move = MoveAction.ReadValue<Vector2>();
+        Debug.Log(Move);
+
+        Vector2 position = (Vector2)transform.position + Move * 0.01f;
+
+
         float horizontal = 0.0f;
-        if (keyboard.current.leftArrowKey.isPressed)
+        if (Keyboard.current.leftArrowKey.isPressed)
         {
             horizontal = -1.0f;
             }
-        else if (keyboard.current.rightArrowKey.isPressed)
+        else if (Keyboard.current.rightArrowKey.isPressed)
         {
             horizontal = 1.0f;
         }
@@ -29,11 +34,11 @@ public class PlayerController : MonoBehaviour
 
 
         float vertical = 0.0f;
-        if (keyboard.current.upArrowKey.isPressed)
+        if (Keyboard.current.upArrowKey.isPressed)
         {
             vertical = 1.0f;
         }
-        else if (keyboard.current.downArrowKey.isPressed)
+        else if (Keyboard.current.downArrowKey.isPressed)
         {
             vertical = -1.0f;
         }
@@ -42,8 +47,8 @@ public class PlayerController : MonoBehaviour
 
        
         Vector2 position = transform.position;
-        position.x = position.x + 0.1f * horizontal;
-        position.y = position.y + 0.1f * vertical;
+        position.x = position.x + 0.01f * horizontal;
+        position.y = position.y + 0.01f * vertical;
         transform.position = position;
     }
 
