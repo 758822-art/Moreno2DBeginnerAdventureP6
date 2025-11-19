@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,18 +10,12 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MoveAction.Enable();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 Move = MoveAction.ReadValue<Vector2>();
-        Debug.Log(Move);
-
-        Vector2 position = (Vector2)transform.position + Move * 0.01f;
-
-
         float horizontal = 0.0f;
         if (Keyboard.current.leftArrowKey.isPressed)
         {
@@ -50,6 +45,10 @@ public class PlayerController : MonoBehaviour
         position.x = position.x + 0.01f * horizontal;
         position.y = position.y + 0.01f * vertical;
         transform.position = position;
+        if (LeftAction.IsPressed())
+        {
+            horizontal = -1.0f;
+        }
     }
 
     }    
