@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1538561539912278672}
   - component: {fileID: 1031112106448405831}
   - component: {fileID: 3018827654753925199}
+  - component: {fileID: 7985105606426354189}
   m_Layer: 0
   m_Name: Ruby
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.028919, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,60 +98,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d779c13594399438eabce5c3602e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftAction:
-    m_Name: Left
+  MoveAction:
+    m_Name: Move
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 867f6a53-40ce-478c-93d5-cbf1b4db9689
+    m_Id: adca9c40-f35f-4499-84bc-7391c2577209
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 587c6f61-75c1-4d56-b0e7-0bde575edb4b
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Left
-      m_Flags: 0
     - m_Name: 2D Vector
-      m_Id: eacebb02-3b51-4c5d-9b39-b2f5aa4be47a
+      m_Id: 73145e1e-1840-49a1-b8af-f10a52a5302b
       m_Path: 2DVector
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left
+      m_Action: Move
       m_Flags: 4
     - m_Name: up
-      m_Id: 6b2234ca-cbe1-48b2-a652-2157078fd546
+      m_Id: ffeb030d-82ce-40c6-89d5-158b2f63c204
       m_Path: <Keyboard>/upArrow
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left
+      m_Action: Move
       m_Flags: 8
     - m_Name: down
-      m_Id: 1c1494d5-fe83-447f-a849-c7a54577cb95
+      m_Id: a9099a15-ab47-4aa5-afa6-b80f0c4ca571
       m_Path: <Keyboard>/downArrow
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left
+      m_Action: Move
       m_Flags: 8
     - m_Name: left
-      m_Id: 4d01709c-b5cb-4a82-aea3-b305abbddefe
+      m_Id: 9add7475-439a-4687-8182-c72446c837a8
       m_Path: <Keyboard>/leftArrow
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left
+      m_Action: Move
       m_Flags: 8
     - m_Name: right
-      m_Id: d2f20937-f913-433a-b92f-a7b13cf73c7e
+      m_Id: f37d27dc-4094-4e88-ae03-ea587b91ae4e
       m_Path: <Keyboard>/rightArrow
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Left
+      m_Action: Move
       m_Flags: 8
     m_Flags: 0
+--- !u!50 &7985105606426354189
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674075023937745344}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
