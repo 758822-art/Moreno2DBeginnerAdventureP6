@@ -15,21 +15,23 @@ public class PlayerController : MonoBehaviour
         MoveAction.Enable();
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 10;
-        rigidboddy2d = GetComponent<rigidbody2d>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
-    }       
-      move = MoveAction..ReadValue<Vector2>(); 
-      Debug.Log(move);
+    {
+        move = MoveAction.ReadValue<Vector2>(); 
+        Debug.Log(move);
     }
+
+
 
 
     void FixedUpdate()
     {
-        Vector2 position = (Vector2)rigiidbody2d.position + move * 3.0f * Time..deltaTime;
-        rigidbody2d.MovePosition(poitionn);
+        Vector2 position = (Vector2)rigidbody2d.position + move * 3.0f * Time.deltaTime;
+        rigidbody2d.MovePosition(position);
     }
   }
         
