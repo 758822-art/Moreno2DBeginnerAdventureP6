@@ -17187,7 +17187,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.8228934}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.22, y: 2.54}
     newSize: {x: 1.22, y: 2.54}
     adaptiveTilingThreshold: 0.5
@@ -17958,6 +17958,81 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[5].m_Id
+      value: 8ecfdc3d-4b64-46eb-887f-2616b24b3de4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[6].m_Id
+      value: c23e92f5-cb41-44fe-b95c-1eaf33b94fd3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[7].m_Id
+      value: 6db7f228-c164-4887-8ded-a32d9b1d3182
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[8].m_Id
+      value: 47fc7d8b-02d6-438a-9a79-f2efb88fc995
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[5].m_Path
+      value: <Keyboard>/leftArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[6].m_Path
+      value: <Keyboard>/rightArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[7].m_Path
+      value: <Keyboard>/upArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[8].m_Path
+      value: <Keyboard>/downArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[5].m_Action
+      value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[6].m_Action
+      value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[7].m_Action
+      value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018827654753925199, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
+        type: 3}
+      propertyPath: MoveAction.m_SingletonActionBindings.Array.data[8].m_Action
+      value: Move
       objectReference: {fileID: 0}
     - target: {fileID: 4674075023937745344, guid: 01bb00c51eb3c7741bdcfdfb46f8ff85,
         type: 3}
